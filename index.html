@@ -31,20 +31,42 @@
     }
 
     .hero {
-      text-align: center;
-      background: #f4f4f4;
-      padding: 60px 20px;
-    }
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: white;
+}
 
-    .hero h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+.hero-text {
+    flex: 1;
+}
 
-    .hero p {
-      font-size: 1.2em;
-      color: #555;
-    }
+.hero-text h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2.6rem;
+}
+
+.hero-text h3 {
+    margin-top: 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.hero-text p {
+    text-align: justify;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.profile-pic {
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
     h2 {
       border-bottom: 2px solid #222;
@@ -77,14 +99,32 @@
     </nav>
   </header>
 
-  <section class="hero" id="about">
+  <section class="hero">
 
-    <img src="PSI Graduation 2023 0162.jpg" alt="Vatsalya Vaibhav">
-    <h1>Vatsalya Vaibhav</h1>
-    
-    <p>Welcome to my homepage — I’m a Ph.D. student at the Higgs Centre for Theoretical Physics at the University of Edinburgh. My research
-    includes a wide range of topics ranging from quantum gravity and cosmology, lattice discretization of fermions, to mathematical physics.</p>
-  </section>
+    <img class="profile-pic"
+         src="PSI Graduation 2023 0162.jpg"
+         alt="Vatsalya Vaibhav">
+
+    <div class="hero-text">
+
+        <h1>Vatsalya Vaibhav</h1>
+
+        <h3>
+            Ph.D. Student<br>
+            Higgs Centre for Theoretical Physics<br>
+            University of Edinburgh
+        </h3>
+
+        <p>
+            Welcome to my homepage. I am a Ph.D. student at the Higgs Centre
+            for Theoretical Physics at the University of Edinburgh. My research
+            interests include quantum gravity, cosmology, lattice
+            discretizations of fermions, and mathematical physics.
+        </p>
+
+    </div>
+
+</section>
 
   <section id="contact">
     <h2>Contact</h2>
