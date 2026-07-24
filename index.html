@@ -80,6 +80,54 @@
       color: white;
     }
 
+    /* --- Research topic blocks with images --- */
+    .research-topic {
+      max-width: 1100px;
+      margin: 0 auto 50px auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .research-topic.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .research-topic img {
+      width: 260px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    }
+
+    .research-topic .topic-text {
+      flex: 1;
+    }
+
+    .research-topic h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #0b1f3a;
+    }
+
+    .research-topic p {
+      text-align: justify;
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      .research-topic,
+      .research-topic.reverse {
+        flex-direction: column;
+        align-items: center;
+      }
+      .research-topic img {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 2em;
@@ -131,31 +179,49 @@
 
 <h2>Research Interests</h2>
 
-<ul>
-    <li>Quantum Gravity and Cosmology</li>
-The $\Lambda$-CDM model has been an extremely successful endeavor to understand the underpinning mechanism of the Universe. It is remarkable how it is so
-consistent with another extremely successful model which is the Standard Model of particle physics. Together, these two models have the potential to explain 
-the entire cosmic history of the Universe but it is the general belief that at very early times they have to be replaced by a more fundamental theory of quantum 
-gravity. I am interested in minimalistic models of quantum gravity such as quadratic gravity as potentials tweaks to the standard story that could explain some
-of the remaining conceptual puzzles to our understanding of the Universe while assuming that the standard radiation dominated universe extends all the way to the Big Bang.
-  
-    <li>Lattice Fermions</li>
-Lattice field theory provides the only reliable handle to deal with strongly coupled quantum field theories and has been extremely succesful in understanding
-the infrared regime of QCD. However, one of the last standing problems of lattice field theory is to simulate a chiral guage theory such as the Standard Model.  
-At the heart of this problem is the fermion doubling problem along with no-go theorems that prohibit a lattice description of chiral fermions. Along with my
-supervisor Latham Boyle, I have been thinking about the Kahler-Driac fermions as a possible route to overcome this issue. Unlike usual fermions, Kahler-Dirac
-fermions provide a geometrical description of fermions in terms of polyforms and makes it possible to realize the appropriate discretization of fermions on the
-lattice while preserving the topological properties of the continuum manifold.  
-  
-  <li>Mathematical Physics</li>
-One of the most important discoveries of physics in the 20th century was the deep relation between symmetries and conserved quantities. The Standard Model of
-particles physics can be explained using the direct-product of the simplest Lie groups. However, the quantum description of the theory may not respect the classical
-symmetries. This phenomenon of violation of the symmetry due to quantization of the theory is called anomaly. Anomalies are interesting mathematical objects that depend
-only on the topological properties of the twisted principle G-bundle. I have been investigating the anomalies that appear in lattice models with Kahler-Dirac fermions and
-the Weyl anomaly using the exact renormalization group (ERG) and twistor methods. Previously, I have tried to understand the underlying mathematical structures of the
-Standard Model using Division algebras and the exceptional Lie groups.
-  
-</ul>
+<div class="research-topic">
+  <img src="images/quantum-gravity-cosmology.jpg" alt="Quantum Gravity and Cosmology">
+  <div class="topic-text">
+    <h3>Quantum Gravity and Cosmology</h3>
+    <p>
+      The $\Lambda$-CDM model has been an extremely successful endeavor to understand the underpinning mechanism of the Universe. It is remarkable how it is so
+      consistent with another extremely successful model which is the Standard Model of particle physics. Together, these two models have the potential to explain
+      the entire cosmic history of the Universe but it is the general belief that at very early times they have to be replaced by a more fundamental theory of quantum
+      gravity. I am interested in minimalistic models of quantum gravity such as quadratic gravity as potentials tweaks to the standard story that could explain some
+      of the remaining conceptual puzzles to our understanding of the Universe while assuming that the standard radiation dominated universe extends all the way to the Big Bang.
+    </p>
+  </div>
+</div>
+
+<div class="research-topic reverse">
+  <img src="images/lattice-fermions.jpg" alt="Lattice Fermions">
+  <div class="topic-text">
+    <h3>Lattice Fermions</h3>
+    <p>
+      Lattice field theory provides the only reliable handle to deal with strongly coupled quantum field theories and has been extremely succesful in understanding
+      the infrared regime of QCD. However, one of the last standing problems of lattice field theory is to simulate a chiral guage theory such as the Standard Model.
+      At the heart of this problem is the fermion doubling problem along with no-go theorems that prohibit a lattice description of chiral fermions. Along with my
+      supervisor Latham Boyle, I have been thinking about the Kahler-Driac fermions as a possible route to overcome this issue. Unlike usual fermions, Kahler-Dirac
+      fermions provide a geometrical description of fermions in terms of polyforms and makes it possible to realize the appropriate discretization of fermions on the
+      lattice while preserving the topological properties of the continuum manifold.
+    </p>
+  </div>
+</div>
+
+<div class="research-topic">
+  <img src="images/mathematical-physics.jpg" alt="Mathematical Physics">
+  <div class="topic-text">
+    <h3>Mathematical Physics</h3>
+    <p>
+      One of the most important discoveries of physics in the 20th century was the deep relation between symmetries and conserved quantities. The Standard Model of
+      particles physics can be explained using the direct-product of the simplest Lie groups. However, the quantum description of the theory may not respect the classical
+      symmetries. This phenomenon of violation of the symmetry due to quantization of the theory is called anomaly. Anomalies are interesting mathematical objects that depend
+      only on the topological properties of the twisted principle G-bundle. I have been investigating the anomalies that appear in lattice models with Kahler-Dirac fermions and
+      the Weyl anomaly using the exact renormalization group (ERG) and twistor methods. Previously, I have tried to understand the underlying mathematical structures of the
+      Standard Model using Division algebras and the exceptional Lie groups.
+    </p>
+  </div>
+</div>
 
 </section>
 
